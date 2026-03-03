@@ -1,0 +1,39 @@
+create sections and subsections
+\section{section}
+\subsection{subsection}
+
+with itemize you create bullet points
+\begin{itemize}
+    \item item 1
+    \item item 2
+\end{itemize}
+
+with enumerate you create numbered items
+\begin{enumerate}
+    \item first intem
+    \item second item
+\end{enumerate}
+
+insert images like the following:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{logo_vgtu.png} %modify the 0.5 to change size of image
+    \caption{caption}
+    \label{fig:example}
+\end{figure}
+
+you can also use vspace to create a space \vspace{3cm} \\
+like this. you can use double backslash or an empty line to go to the next line \\ next line
+
+
+with newpage you go to the next page.\\
+\newpage
+this references \cref{fig:example}
+
+you can also reference \cref{lst:example}
+\lstinline[style=inline]|inline command|
+\lstinputlisting[style=console,caption={caption},label={lst:example}]{listings/example.txt}
+
+
+
+\textbf{ textbf makes text bold} and \textit{textit makes text italic}

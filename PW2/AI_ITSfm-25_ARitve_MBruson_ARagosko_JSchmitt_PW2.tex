@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage[margin={2cm,2cm}]{geometry}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{cleveref}
+\usepackage{multicol}
+\setlength{\parindent}{0pt}
+%\usepackage{apacite}
+\usepackage[backend=biber, style=apa, sorting=none]{biblatex}
+\usepackage{csquotes}
+\addbibresource{refs.bib}
+
+\usepackage{inconsolata} % Nice monospace font
+
+% Define PowerShell language
+\lstdefinestyle{console}{
+  frame=single,
+  showstringspaces=false,
+  breaklines=true,
+  breakautoindent=true,  % Corrected this line
+  basicstyle=\fontfamily{pcr}\fontsize{7.5}{8}\selectfont,
+  numberstyle=\tiny\color{gray},
+  captionpos=b,
+  numbers=left
+}
+
+\lstdefinestyle{inline}{
+    basicstyle=\ttfamily\color{blue},
+    showstringspaces=false
+}
+\lstdefinestyle{bash}{
+    language=bash,
+  tabsize=2,
+  extendedchars=true,
+  frame=single,
+  showstringspaces=false,
+  breaklines=true,
+  numbers=left,
+  breakautoindent=true,  % Corrected this line
+  basicstyle=\fontfamily{pcr}\fontsize{8.5}{9}\selectfont,
+  keywordstyle=\color{cyan!75!black}\bfseries,
+  commentstyle=\color{green!75!black},
+  stringstyle=\color{orange},
+  numberstyle=\tiny\color{gray},
+  captionpos=b
+}
+
+\begin{document}
+\include{coverpage}
+\newpage
+\tableofcontents
+\newpage
+
+\include{contents/1_intro}
+\include{contents/2_methods}
+\cleardoublepage
+\include{contents/0_example}
+
+\end{document}
