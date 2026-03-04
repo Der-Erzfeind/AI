@@ -1,20 +1,20 @@
-create sections and subsections
+create sections and subsections with \textbackslash section\{title\} or \textbackslash subsection:
 \section{section}
 \subsection{subsection}
 
-with itemize you create bullet points
+with \textbackslash begin\{itemize\}you create bullet points
 \begin{itemize}
     \item item 1
     \item item 2
 \end{itemize}
 
-with enumerate you create numbered items
+with \textbackslash begin\{enumerate\} you create numbered items
 \begin{enumerate}
     \item first intem
     \item second item
 \end{enumerate}
 
-insert images like the following:
+insert images like the following (see source file):
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{logo_vgtu.png} %modify the 0.5 to change size of image
@@ -22,11 +22,11 @@ insert images like the following:
     \label{fig:example}
 \end{figure}
 
-you can also use vspace to create a space \vspace{3cm} \\
+you can also use \textbackslash vspace to create a space \vspace{3cm} \\
 like this. you can use double backslash or an empty line to go to the next line \\ next line
 
 
-with newpage you go to the next page.\\
+with \textbackslash newpage you go to the next page.\\
 \newpage
 this references \cref{fig:example}
 
@@ -36,4 +36,8 @@ you can also reference \cref{lst:example}
 
 
 
-\textbf{ textbf makes text bold} and \textit{textit makes text italic}
+\textbf{\textbackslash textbf makes text bold} and \textit{\textbackslash textit makes text italic}
+
+
+To cite something you put the citation into the refs.bib file in the bibtex format (can be found on all major publisher sites).
+The you can cite with parenthesis with \textbackslash parencite\{abbreviation on top of the bibtex item\}: \parencite{rana2022deepfake} or without parenthesis with \textbackslash cite: \cite{rana2022deepfake}
