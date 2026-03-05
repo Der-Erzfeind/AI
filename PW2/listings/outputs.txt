@@ -1,0 +1,31 @@
+Raw shape: (6248, 1089)
+Raw label counts:
+ label
+1    5653
+0     595
+
+
+After Splitting:
+Train: shape (4373, 245)	labels {1: 3957, 0: 416}
+Val:   shape (937, 245) 	labels {1: 848, 0: 89}
+Test:  shape (938, 245) 	labels {1: 848, 0: 90}
+
+
+
+=== FINAL TEST REPORT (threshold tuned on VAL) ===
+Threshold: 0.35
+              precision    recall  f1-score   support
+
+           0     1.0000    1.0000    1.0000        90
+           1     1.0000    1.0000    1.0000       848
+
+    accuracy                         1.0000       938
+   macro avg     1.0000    1.0000    1.0000       938
+weighted avg     1.0000    1.0000    1.0000       938
+
+ROC-AUC: 1.0
+PR-AUC: 1.0
+Confusion matrix:
+ [[ 90   0]
+ [  0 848]]
+
